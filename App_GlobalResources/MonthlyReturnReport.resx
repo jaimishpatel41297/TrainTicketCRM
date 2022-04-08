@@ -1,0 +1,446 @@
+<<<<<<< HEAD
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="sqlDataSourceME.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 251</value>
+  </metadata>
+  <data name="customSqlQuery1.Sql" xml:space="preserve">
+    <value>select tt.Name as TTName,tcm.ClassName,sum(cast(FareAmount as int)) as fxfare,sum(cast(ExcessCharge as int)) as exchg,sum(cast(WeightCharge as int)) as ubl,sum(cast(TotalWithGST as decimal)) as TotalGST from ExcessFairMaster efm, TrainClassMaster tcm,TTMaster as tt where efm.ClassId=tcm.Id and efm.TTId=tt.Id and efm.ClassId=8 group by tcm.ClassName,tt.Name</value>
+  </data>
+  <data name="sqlDataSourceME.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZU1FIj48VmlldyBOYW1lPSJNRVNxbFF1ZXJ5Ij48RmllbGQgTmFtZT0iVFROYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNsYXNzTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJmeGZhcmUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJleGNoZyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InVibCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlRvdGFsR1NUIiBUeXBlPSJEZWNpbWFsIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <metadata name="sqlDataSourceORD.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 290</value>
+  </metadata>
+  <data name="customSqlQuery2.Sql" xml:space="preserve">
+    <value>select tt.Name as TTName,tcm.ClassName,sum(cast(FareAmount as int)) as fxfare,sum(cast(ExcessCharge as int)) as exchg,sum(cast(WeightCharge as int)) as ubl,sum(cast(TotalWithGST as decimal)) as TotalGST from ExcessFairMaster efm, TrainClassMaster tcm,TTMaster as tt where efm.ClassId=tcm.Id and efm.TTId=tt.Id and efm.ClassId=9 group by tcm.ClassName,tt.Name</value>
+  </data>
+  <data name="sqlDataSourceORD.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZU9SRCI+PFZpZXcgTmFtZT0iT1JEU3FsUXVlcnkiPjxGaWVsZCBOYW1lPSJUVE5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ2xhc3NOYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImZ4ZmFyZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9ImV4Y2hnIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0idWJsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVG90YWxHU1QiIFR5cGU9IkRlY2ltYWwiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+  </data>
+  <metadata name="sqlDataSource2S.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 329</value>
+  </metadata>
+  <data name="customSqlQuery3.Sql" xml:space="preserve">
+    <value>select tt.Name as TTName,tcm.ClassName,sum(cast(FareAmount as int)) as fxfare,sum(cast(ExcessCharge as int)) as exchg,sum(cast(WeightCharge as int)) as ubl,sum(cast(TotalWithGST as decimal)) as TotalGST from ExcessFairMaster efm, TrainClassMaster tcm,TTMaster as tt where efm.ClassId=tcm.Id and efm.TTId=tt.Id and efm.ClassId=7 group by tcm.ClassName,tt.Name</value>
+  </data>
+  <data name="sqlDataSource2S.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTJTIj48VmlldyBOYW1lPSIyU1NxbFF1ZXJ5Ij48RmllbGQgTmFtZT0iVFROYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNsYXNzTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJmeGZhcmUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJleGNoZyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InVibCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlRvdGFsR1NUIiBUeXBlPSJEZWNpbWFsIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <metadata name="sqlDataSourceSL.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 212</value>
+  </metadata>
+  <data name="customSqlQuery4.Sql" xml:space="preserve">
+    <value>select tt.Name as TTName,tcm.ClassName,sum(cast(FareAmount as int)) as fxfare,sum(cast(ExcessCharge as int)) as exchg,sum(cast(WeightCharge as int)) as ubl,sum(cast(TotalWithGST as decimal)) as TotalGST from ExcessFairMaster efm, TrainClassMaster tcm,TTMaster as tt where efm.ClassId=tcm.Id and efm.TTId=tt.Id and efm.ClassId=6 group by tcm.ClassName,tt.Name</value>
+  </data>
+  <data name="sqlDataSourceSL.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZVNMIj48VmlldyBOYW1lPSJTTFNxbFF1ZXJ5Ij48RmllbGQgTmFtZT0iVFROYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNsYXNzTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJmeGZhcmUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJleGNoZyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InVibCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlRvdGFsR1NUIiBUeXBlPSJEZWNpbWFsIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <metadata name="sqlDataSourceCC.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 173</value>
+  </metadata>
+  <data name="customSqlQuery5.Sql" xml:space="preserve">
+    <value>select tt.Name as TTName,tcm.ClassName,sum(cast(FareAmount as int)) as fxfare,sum(cast(ExcessCharge as int)) as exchg,sum(cast(WeightCharge as int)) as ubl,sum(cast(TotalWithGST as decimal)) as TotalGST from ExcessFairMaster efm, TrainClassMaster tcm,TTMaster as tt where efm.ClassId=tcm.Id and efm.TTId=tt.Id and efm.ClassId=5 group by tcm.ClassName,tt.Name</value>
+  </data>
+  <data name="sqlDataSourceCC.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZUNDIj48VmlldyBOYW1lPSJDQ1NxbFF1ZXJ5Ij48RmllbGQgTmFtZT0iVFROYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNsYXNzTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJmeGZhcmUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJleGNoZyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InVibCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlRvdGFsR1NUIiBUeXBlPSJEZWNpbWFsIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <metadata name="sqlDataSource3AC.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 134</value>
+  </metadata>
+  <data name="customSqlQuery6.Sql" xml:space="preserve">
+    <value>select tt.Name as TTName,tcm.ClassName,sum(cast(FareAmount as int)) as fxfare,sum(cast(ExcessCharge as int)) as exchg,sum(cast(WeightCharge as int)) as ubl,sum(cast(TotalWithGST as decimal)) as TotalGST from ExcessFairMaster efm, TrainClassMaster tcm,TTMaster as tt where efm.ClassId=tcm.Id and efm.TTId=tt.Id and efm.ClassId=4 group by tcm.ClassName,tt.Name</value>
+  </data>
+  <data name="sqlDataSource3AC.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTNBQyI+PFZpZXcgTmFtZT0iM0FDU3FsUXVlcnkiPjxGaWVsZCBOYW1lPSJUVE5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ2xhc3NOYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImZ4ZmFyZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9ImV4Y2hnIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0idWJsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVG90YWxHU1QiIFR5cGU9IkRlY2ltYWwiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+  </data>
+  <metadata name="sqlDataSource2AC.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 95</value>
+  </metadata>
+  <data name="customSqlQuery7.Sql" xml:space="preserve">
+    <value>select tt.Name as TTName,tcm.ClassName,sum(cast(FareAmount as int)) as fxfare,sum(cast(ExcessCharge as int)) as exchg,sum(cast(WeightCharge as int)) as ubl,sum(cast(TotalWithGST as decimal)) as TotalGST from ExcessFairMaster efm, TrainClassMaster tcm,TTMaster as tt where efm.ClassId=tcm.Id and efm.TTId=tt.Id and efm.ClassId=3 group by tcm.ClassName,tt.Name</value>
+  </data>
+  <data name="sqlDataSource2AC.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTJBQyI+PFZpZXcgTmFtZT0iMkFDU3FsUXVlcnkiPjxGaWVsZCBOYW1lPSJUVE5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ2xhc3NOYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImZ4ZmFyZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9ImV4Y2hnIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0idWJsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVG90YWxHU1QiIFR5cGU9IkRlY2ltYWwiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+  </data>
+  <metadata name="sqlDataSourceFC.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="customSqlQuery8.Sql" xml:space="preserve">
+    <value>select tt.Name as TTName,tcm.ClassName,sum(cast(FareAmount as int)) as fxfare,sum(cast(ExcessCharge as int)) as exchg,sum(cast(WeightCharge as int)) as ubl,sum(cast(TotalWithGST as decimal)) as TotalGST from ExcessFairMaster efm, TrainClassMaster tcm,TTMaster as tt where efm.ClassId=tcm.Id and efm.TTId=tt.Id and efm.ClassId=1 group by tcm.ClassName,tt.Name</value>
+  </data>
+  <data name="sqlDataSourceFC.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZUZDIj48VmlldyBOYW1lPSJGQ1NxbFF1ZXJ5Ij48RmllbGQgTmFtZT0iVFROYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNsYXNzTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJmeGZhcmUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJleGNoZyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InVibCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlRvdGFsR1NUIiBUeXBlPSJEZWNpbWFsIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <metadata name="sqlDataSourceTT.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 485</value>
+  </metadata>
+  <metadata name="sqlDataSource1AC.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
+  </metadata>
+  <data name="customSqlQuery10.Sql" xml:space="preserve">
+    <value>select tt.Name as TTName,tcm.ClassName,sum(cast(FareAmount as int)) as fxfare,sum(cast(ExcessCharge as int)) as exchg,sum(cast(WeightCharge as int)) as ubl,sum(cast(TotalWithGST as decimal)) as TotalGST from ExcessFairMaster efm, TrainClassMaster tcm,TTMaster as tt where efm.ClassId=tcm.Id and efm.TTId=tt.Id and efm.ClassId=2 group by tcm.ClassName,tt.Name</value>
+  </data>
+  <data name="sqlDataSource1AC.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTFBQyI+PFZpZXcgTmFtZT0iMUFDU3FsUXVlcnkiPjxGaWVsZCBOYW1lPSJUVE5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ2xhc3NOYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImZ4ZmFyZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9ImV4Y2hnIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0idWJsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVG90YWxHU1QiIFR5cGU9IkRlY2ltYWwiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+  </data>
+  <metadata name="sqlDataSourceFoils.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 368</value>
+  </metadata>
+  <data name="sqlDataSourceFoils.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZUZvaWxzIj48VmlldyBOYW1lPSJGb2xpc1NxbFF1ZXJ5Ij48RmllbGQgTmFtZT0iSWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTdGF0aW9uTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJNUk5vIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJBbW91bnQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVVRTTm8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRnJvbUVGVE5vIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRvRUZUTm8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUmVtYXJrIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRUSWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUb3RhbCIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+  </data>
+  <metadata name="sqlDataSourceSTWISE.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 446</value>
+  </metadata>
+  <data name="sqlDataSourceSTWISE.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZVNUV0lTRSI+PFZpZXcgTmFtZT0iU1RXSVNFU3FsUXVlcnkiPjxGaWVsZCBOYW1lPSJTdGF0aW9uTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUb3RhbCIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+  </data>
+  <metadata name="sqlDataSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 407</value>
+  </metadata>
+  <data name="sqlDataSource2.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTIiPjxWaWV3IE5hbWU9IkN1c3RvbVNxbFF1ZXJ5Ij48RmllbGQgTmFtZT0iSWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTdGF0aW9uTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJNUk5vIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJBbW91bnQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVVRTTm8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRnJvbUVGVE5vIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRvRUZUTm8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUmVtYXJrIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRUSWQiIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+=======
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="sqlDataSourceME.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 251</value>
+  </metadata>
+  <data name="customSqlQuery1.Sql" xml:space="preserve">
+    <value>select tt.Name as TTName,tcm.ClassName,sum(cast(FareAmount as int)) as fxfare,sum(cast(ExcessCharge as int)) as exchg,sum(cast(WeightCharge as int)) as ubl,sum(cast(TotalWithGST as decimal)) as TotalGST from ExcessFairMaster efm, TrainClassMaster tcm,TTMaster as tt where efm.ClassId=tcm.Id and efm.TTId=tt.Id and efm.ClassId=8 group by tcm.ClassName,tt.Name</value>
+  </data>
+  <data name="sqlDataSourceME.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZU1FIj48VmlldyBOYW1lPSJNRVNxbFF1ZXJ5Ij48RmllbGQgTmFtZT0iVFROYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNsYXNzTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJmeGZhcmUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJleGNoZyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InVibCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlRvdGFsR1NUIiBUeXBlPSJEZWNpbWFsIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <metadata name="sqlDataSourceORD.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 290</value>
+  </metadata>
+  <data name="customSqlQuery2.Sql" xml:space="preserve">
+    <value>select tt.Name as TTName,tcm.ClassName,sum(cast(FareAmount as int)) as fxfare,sum(cast(ExcessCharge as int)) as exchg,sum(cast(WeightCharge as int)) as ubl,sum(cast(TotalWithGST as decimal)) as TotalGST from ExcessFairMaster efm, TrainClassMaster tcm,TTMaster as tt where efm.ClassId=tcm.Id and efm.TTId=tt.Id and efm.ClassId=9 group by tcm.ClassName,tt.Name</value>
+  </data>
+  <data name="sqlDataSourceORD.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZU9SRCI+PFZpZXcgTmFtZT0iT1JEU3FsUXVlcnkiPjxGaWVsZCBOYW1lPSJUVE5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ2xhc3NOYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImZ4ZmFyZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9ImV4Y2hnIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0idWJsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVG90YWxHU1QiIFR5cGU9IkRlY2ltYWwiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+  </data>
+  <metadata name="sqlDataSource2S.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 329</value>
+  </metadata>
+  <data name="customSqlQuery3.Sql" xml:space="preserve">
+    <value>select tt.Name as TTName,tcm.ClassName,sum(cast(FareAmount as int)) as fxfare,sum(cast(ExcessCharge as int)) as exchg,sum(cast(WeightCharge as int)) as ubl,sum(cast(TotalWithGST as decimal)) as TotalGST from ExcessFairMaster efm, TrainClassMaster tcm,TTMaster as tt where efm.ClassId=tcm.Id and efm.TTId=tt.Id and efm.ClassId=7 group by tcm.ClassName,tt.Name</value>
+  </data>
+  <data name="sqlDataSource2S.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTJTIj48VmlldyBOYW1lPSIyU1NxbFF1ZXJ5Ij48RmllbGQgTmFtZT0iVFROYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNsYXNzTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJmeGZhcmUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJleGNoZyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InVibCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlRvdGFsR1NUIiBUeXBlPSJEZWNpbWFsIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <metadata name="sqlDataSourceSL.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 212</value>
+  </metadata>
+  <data name="customSqlQuery4.Sql" xml:space="preserve">
+    <value>select tt.Name as TTName,tcm.ClassName,sum(cast(FareAmount as int)) as fxfare,sum(cast(ExcessCharge as int)) as exchg,sum(cast(WeightCharge as int)) as ubl,sum(cast(TotalWithGST as decimal)) as TotalGST from ExcessFairMaster efm, TrainClassMaster tcm,TTMaster as tt where efm.ClassId=tcm.Id and efm.TTId=tt.Id and efm.ClassId=6 group by tcm.ClassName,tt.Name</value>
+  </data>
+  <data name="sqlDataSourceSL.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZVNMIj48VmlldyBOYW1lPSJTTFNxbFF1ZXJ5Ij48RmllbGQgTmFtZT0iVFROYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNsYXNzTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJmeGZhcmUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJleGNoZyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InVibCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlRvdGFsR1NUIiBUeXBlPSJEZWNpbWFsIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <metadata name="sqlDataSourceCC.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 173</value>
+  </metadata>
+  <data name="customSqlQuery5.Sql" xml:space="preserve">
+    <value>select tt.Name as TTName,tcm.ClassName,sum(cast(FareAmount as int)) as fxfare,sum(cast(ExcessCharge as int)) as exchg,sum(cast(WeightCharge as int)) as ubl,sum(cast(TotalWithGST as decimal)) as TotalGST from ExcessFairMaster efm, TrainClassMaster tcm,TTMaster as tt where efm.ClassId=tcm.Id and efm.TTId=tt.Id and efm.ClassId=5 group by tcm.ClassName,tt.Name</value>
+  </data>
+  <data name="sqlDataSourceCC.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZUNDIj48VmlldyBOYW1lPSJDQ1NxbFF1ZXJ5Ij48RmllbGQgTmFtZT0iVFROYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNsYXNzTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJmeGZhcmUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJleGNoZyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InVibCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlRvdGFsR1NUIiBUeXBlPSJEZWNpbWFsIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <metadata name="sqlDataSource3AC.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 134</value>
+  </metadata>
+  <data name="customSqlQuery6.Sql" xml:space="preserve">
+    <value>select tt.Name as TTName,tcm.ClassName,sum(cast(FareAmount as int)) as fxfare,sum(cast(ExcessCharge as int)) as exchg,sum(cast(WeightCharge as int)) as ubl,sum(cast(TotalWithGST as decimal)) as TotalGST from ExcessFairMaster efm, TrainClassMaster tcm,TTMaster as tt where efm.ClassId=tcm.Id and efm.TTId=tt.Id and efm.ClassId=4 group by tcm.ClassName,tt.Name</value>
+  </data>
+  <data name="sqlDataSource3AC.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTNBQyI+PFZpZXcgTmFtZT0iM0FDU3FsUXVlcnkiPjxGaWVsZCBOYW1lPSJUVE5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ2xhc3NOYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImZ4ZmFyZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9ImV4Y2hnIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0idWJsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVG90YWxHU1QiIFR5cGU9IkRlY2ltYWwiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+  </data>
+  <metadata name="sqlDataSource2AC.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 95</value>
+  </metadata>
+  <data name="customSqlQuery7.Sql" xml:space="preserve">
+    <value>select tt.Name as TTName,tcm.ClassName,sum(cast(FareAmount as int)) as fxfare,sum(cast(ExcessCharge as int)) as exchg,sum(cast(WeightCharge as int)) as ubl,sum(cast(TotalWithGST as decimal)) as TotalGST from ExcessFairMaster efm, TrainClassMaster tcm,TTMaster as tt where efm.ClassId=tcm.Id and efm.TTId=tt.Id and efm.ClassId=3 group by tcm.ClassName,tt.Name</value>
+  </data>
+  <data name="sqlDataSource2AC.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTJBQyI+PFZpZXcgTmFtZT0iMkFDU3FsUXVlcnkiPjxGaWVsZCBOYW1lPSJUVE5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ2xhc3NOYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImZ4ZmFyZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9ImV4Y2hnIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0idWJsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVG90YWxHU1QiIFR5cGU9IkRlY2ltYWwiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+  </data>
+  <metadata name="sqlDataSourceFC.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="customSqlQuery8.Sql" xml:space="preserve">
+    <value>select tt.Name as TTName,tcm.ClassName,sum(cast(FareAmount as int)) as fxfare,sum(cast(ExcessCharge as int)) as exchg,sum(cast(WeightCharge as int)) as ubl,sum(cast(TotalWithGST as decimal)) as TotalGST from ExcessFairMaster efm, TrainClassMaster tcm,TTMaster as tt where efm.ClassId=tcm.Id and efm.TTId=tt.Id and efm.ClassId=1 group by tcm.ClassName,tt.Name</value>
+  </data>
+  <data name="sqlDataSourceFC.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZUZDIj48VmlldyBOYW1lPSJGQ1NxbFF1ZXJ5Ij48RmllbGQgTmFtZT0iVFROYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNsYXNzTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJmeGZhcmUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJleGNoZyIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9InVibCIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IlRvdGFsR1NUIiBUeXBlPSJEZWNpbWFsIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+  <metadata name="sqlDataSourceTT.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 485</value>
+  </metadata>
+  <metadata name="sqlDataSource1AC.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
+  </metadata>
+  <data name="customSqlQuery10.Sql" xml:space="preserve">
+    <value>select tt.Name as TTName,tcm.ClassName,sum(cast(FareAmount as int)) as fxfare,sum(cast(ExcessCharge as int)) as exchg,sum(cast(WeightCharge as int)) as ubl,sum(cast(TotalWithGST as decimal)) as TotalGST from ExcessFairMaster efm, TrainClassMaster tcm,TTMaster as tt where efm.ClassId=tcm.Id and efm.TTId=tt.Id and efm.ClassId=2 group by tcm.ClassName,tt.Name</value>
+  </data>
+  <data name="sqlDataSource1AC.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTFBQyI+PFZpZXcgTmFtZT0iMUFDU3FsUXVlcnkiPjxGaWVsZCBOYW1lPSJUVE5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ2xhc3NOYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9ImZ4ZmFyZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9ImV4Y2hnIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0idWJsIiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iVG90YWxHU1QiIFR5cGU9IkRlY2ltYWwiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+  </data>
+  <metadata name="sqlDataSourceFoils.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 368</value>
+  </metadata>
+  <data name="sqlDataSourceFoils.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZUZvaWxzIj48VmlldyBOYW1lPSJGb2xpc1NxbFF1ZXJ5Ij48RmllbGQgTmFtZT0iSWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTdGF0aW9uTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJNUk5vIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJBbW91bnQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVVRTTm8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRnJvbUVGVE5vIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRvRUZUTm8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUmVtYXJrIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRUSWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJUb3RhbCIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+  </data>
+  <metadata name="sqlDataSourceSTWISE.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 446</value>
+  </metadata>
+  <data name="sqlDataSourceSTWISE.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZVNUV0lTRSI+PFZpZXcgTmFtZT0iU1RXSVNFU3FsUXVlcnkiPjxGaWVsZCBOYW1lPSJTdGF0aW9uTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUb3RhbCIgVHlwZT0iSW50MzIiIC8+PC9WaWV3PjwvRGF0YVNldD4=</value>
+  </data>
+  <metadata name="sqlDataSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 407</value>
+  </metadata>
+  <data name="sqlDataSource2.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0ic3FsRGF0YVNvdXJjZTIiPjxWaWV3IE5hbWU9IkN1c3RvbVNxbFF1ZXJ5Ij48RmllbGQgTmFtZT0iSWQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJTdGF0aW9uTmFtZSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJNUk5vIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkRhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJBbW91bnQiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iVVRTTm8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRnJvbUVGVE5vIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRvRUZUTm8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iUmVtYXJrIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlRUSWQiIFR5cGU9IkludDMyIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+>>>>>>> 58cb8ea43cf39064a4f8cc3859d9e0195460db3d
+</root>
